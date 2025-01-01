@@ -1,0 +1,15 @@
+{
+  "dataWrangler.experiments.fastCsvParsing": true,
+  "editor.formatOnSaveMode": "modifications",
+  "http.proxy": "http://localhost:7890",
+  "http.proxyStrictSSL": true,
+  "http.proxySupport": "fallback",
+  "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+  "python.terminal.executeInFileDir": true,
+  "[solidity]": {
+    "editor.defaultFormatter": "JuanBlanco.solidity"
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#007acc"
+  }
+}

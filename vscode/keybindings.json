@@ -1,0 +1,10 @@
+[
+  {
+    "key": "cmd+shift+l",
+    "command": "-continue.focusContinueInputWithoutClear"
+  },
+  {
+    "key": "cmd+shift+l",
+    "command": "-aichat.insertselectionintochat"
+  }
+]

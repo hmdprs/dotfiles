@@ -1,0 +1,129 @@
+# build system configuration
+[build-system]
+requires = ["hatchling>=1.21.0"]
+build-backend = "hatchling.build"
+
+# core project metadata
+[project]
+name = "basic-project"
+version = "0.1.0"
+description = "Basic Project Template"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.14"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+keywords = ["template", "basic", "project"]
+
+# core dependencies
+dependencies = [
+    "requests>=2.31.0",
+    "fastapi>=0.100.0",
+]
+
+# optional development dependencies
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=1.0.0",
+]
+
+# testing configuration
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra -q"
+python_files = ["test_*.py", "*_test.py"]
+python_functions = ["test_*"]
+python_classes = ["Test*"]
+
+# Ruff linter & formatter configuration
+[tool.ruff]
+# core settings
+line-length = 88
+indent-width = 4
+target-version = "py312"
+
+# file discovery settings
+exclude = [
+    # version control
+    ".git",
+    ".gitignore",
+    ".git-rewrite",
+    ".hg",
+    ".svn",
+    ".bzr",
+
+    # Python environments
+    ".venv",
+    "venv",
+    ".env",
+    ".pyenv",
+
+    # cache and build
+    "__pycache__",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".mypy_cache",
+    ".pytype",
+    ".nox",
+    ".tox",
+    ".eggs",
+
+    # build and distribution
+    "build",
+    "dist",
+    "_build",
+    "buck-out",
+
+    # IDE and tools
+    ".vscode",
+    ".ipynb_checkpoints",
+    ".direnv",
+    ".pants.d",
+    "__pypackages__",
+
+    # dependencies
+    "node_modules",
+    "site-packages",
+]
+
+# linting rules
+select = [
+    "F",            # Pyflakes - basic Python errors
+    "E",            # pycodestyle errors - PEP 8 style guide
+    "W",            # pycodestyle warnings - PEP 8 style guide
+    "C90",          # mccabe - code complexity
+    "I",            # isort - import sorting
+    "N",            # pep8-naming - naming conventions
+    "D",            # pydocstyle - docstring style
+    "UP",           # pyupgrade - upgrade syntax
+    "B",            # flake8-bugbear - bug detection
+    "Q",            # flake8-quotes - quote style
+    "PL",           # pylint - advanced linting
+    "RUF",          # Ruff-specific rules
+]
+
+# ignored rules
+ignore = [
+    "D100",         # missing docstring in public module
+    "D104",         # missing docstring in public package
+]
+
+# auto-fix configuration
+fixable = ["ALL"]
+unfixable = []
+
+# variable naming
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# formatting configuration
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+preview = true

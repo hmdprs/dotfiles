@@ -1,0 +1,33 @@
+{
+  "recommendations": [
+    // main
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "charliermarsh.ruff",
+    "Continue.continue",
+    "mhutchie.git-graph",
+    "Gruntfuggly.todo-tree",
+    "yzhang.markdown-all-in-one",
+    "esbenp.prettier-vscode",
+    "tamasfe.even-better-toml",
+    "mechatroner.rainbow-csv",
+    "streetsidesoftware.code-spell-checker",
+    "wengerk.highlight-bad-chars",
+    "ultram4rine.vscode-choosealicense",
+    "ionutvmi.path-autocomplete",
+    // project-specific
+    "ms-vscode-remote.remote-containers",
+    "ms-toolsai.datawrangler",
+    "GitHub.vscode-pull-request-github",
+    "github.vscode-github-actions",
+    "GitHub.remotehub",
+    "NomicFoundation.hardhat-solidity",
+    "tintinweb.vscode-vyper",
+    "cweijan.vscode-database-client2",
+    "luisfontes19.vscode-swissknife",
+    "bierner.markdown-mermaid",
+    "adpyke.codesnap"
+  ],
+
+  "unwantedRecommendations": []
+}

@@ -1,0 +1,104 @@
+# ~/.gitconfig
+
+[include]
+    path = ~/.gitsecrets
+
+[core]
+    excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes
+    # convert line endings to LF on commit, but not on checkout
+    autocrlf = input
+    # detect problematic whitespace patterns
+    whitespace = trailing-space,space-before-tab
+    # improve git status performance by caching untracked files
+    untrackedCache = true
+    # prevent issues with file modification times on macOS
+    trustctime = false
+
+[init]
+    defaultBranch = main
+
+[gpg]
+    # use SSH key for commit signing
+    format = ssh
+
+[commit]
+    gpgsign = true
+
+[tag]
+    gpgSign = true
+
+[credential]
+    # store credentials in macOS Keychain
+    helper = osxkeychain
+
+[diff]
+    colorMoved = default
+    algorithm = histogram
+    # detect both renames and copies when showing diffs
+    renames = copies
+
+[diff "bin"]
+    # use hexdump to show diffs of binary files
+    textconv = hexdump --verbose --canonical
+
+[merge]
+    conflictstyle = diff3
+    tool = vscode
+
+[mergetool "vscode"]
+    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+
+[pull]
+    rebase = true
+
+[push]
+    default = current
+    autoSetupRemote = true
+
+[fetch]
+    prune = true
+
+[apply]
+    # fix whitespace errors when applying patches
+    whitespace = fix
+
+[help]
+    # automatically correct and execute mistyped commands after 0.1 seconds
+    autocorrect = 1
+
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
+[alias]
+    # status and information commands
+    st = status --short --branch
+    bs = branch --all
+    rs = remote --verbose
+    ts = tag --list
+    contributors = shortlog --summary --numbered
+    als = config --get-regexp alias
+
+    # history and logging
+    l = log --all --color --graph
+    h = log --all --oneline --color --graph
+    # find branches containing a specific commit
+    fb = "!f() { git branch --all --contains $1; }; f"
+    # find tags containing a specific commit
+    ft = "!f() { git describe --always --contains $1; }; f"
+    # find commits containing a specific message
+    fm = "!f() { git log --date=short --grep=$1; }; f"
+    # find commits containing a specific code
+    fc = "!f() { git log --date=short -S$1; }; f"
+
+    # export repository
+    archive-branch = archive --verbose --prefix=archive/ --output=archive.tar HEAD

@@ -1,0 +1,141 @@
+# ~/.gitattributes
+
+# default behavior
+*                   text=auto eol=lf
+
+# configuration files
+.*rc                text
+.gitattributes      text export-ignore
+.gitconfig          text export-ignore
+.gitignore          text export-ignore
+.gitkeep            text export-ignore
+*.conf              text
+*.config            text
+*.dockerignore      text
+*.env               text
+*.ini               text
+*.lock              text
+*.toml              text
+*.yaml              text
+*.yml               text
+config.json         text
+docker-compose*.yml text
+Dockerfile*         text
+Makefile            text
+Procfile            text
+requirements.txt    text
+
+# shell scripts
+*.sh                text eol=lf
+*.bash              text eol=lf
+*.zsh               text eol=lf
+*.cmd               text eol=crlf
+*.bat               text eol=crlf
+
+# Python
+*.py                text diff=python
+*.pyi               text diff=python
+*.ipynb             text diff=jupyter
+*.pyc               binary export-ignore
+*.pyo               binary export-ignore
+*.pyd               binary
+*.egg               binary
+*.whl               binary
+
+# web development
+*.js                text diff=javascript
+*.jsx               text diff=javascript
+*.ts                text diff=typescript
+*.tsx               text diff=typescript
+*.php               text diff=php
+*.css               text diff=css
+*.htm               text diff=html
+*.html              text diff=html
+*.xhtml             text diff=html
+
+# other languages
+*.rs                text diff=rust
+*.sol               text diff=solidity
+*.swift             text diff=swift
+*.go                text diff=golang
+
+# documentation
+*.md                text diff=markdown
+*.pdf               binary
+*.rst               text
+*.rtf               text diff=astextplain
+*.tex               text diff=tex
+*.txt               text
+AUTHORS             text
+CHANGELOG           text
+CHANGES             text
+CONTRIBUTING        text
+copyright           text
+*COPYRIGHT*         text
+INSTALL             text
+license             text
+LICENSE             text
+readme              text
+*README*            text
+TODO                text
+
+# data files
+*.csv               text
+*.json              text
+*.sql               text
+*.tsv               text
+*.xml               text
+*.db                binary
+*.h5                binary
+*.hdf5              binary
+*.mongodb           binary
+*.parquet           binary
+*.pickle            binary
+*.pkl               binary
+*.sqlite            binary
+
+# media files
+*.3gp               binary
+*.ai                binary
+*.avi               binary
+*.bmp               binary
+*.eps               binary
+*.flac              binary
+*.flv               binary
+*.gif               binary
+*.ico               binary
+*.jpeg              binary
+*.jpg               binary
+*.m4a               binary
+*.m4v               binary
+*.midi              binary
+*.mov               binary
+*.mp3               binary
+*.mp4               binary
+*.ogg               binary
+*.png               binary
+*.psd               binary
+*.svg               text
+*.tif               binary
+*.tiff              binary
+*.wav               binary
+*.webm              binary
+*.webp              binary
+
+# fonts
+*.eot               binary
+*.otf               binary
+*.ttf               binary
+*.woff              binary
+*.woff2             binary
+
+# archives
+*.7z                binary
+*.bz2               binary
+*.gz                binary
+*.rar               binary
+*.tar               binary
+*.tgz               binary
+*.xz                binary
+*.zip               binary
+*.zst               binary

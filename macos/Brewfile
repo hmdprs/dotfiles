@@ -1,0 +1,48 @@
+# taps
+tap "homebrew/bundle"                   # https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f
+tap "homebrew/services"                 # https://thoughtbot.com/blog/starting-and-stopping-background-services-with-homebrew
+
+# command line tools
+brew "curl"
+brew "exiftool"                         # read and write EXIF metadata
+brew "fd"                               # alternative to find
+brew "ffmpeg"
+brew "fzf"                              # fuzzy finder
+brew "gallery-dl"                       # download collections from hosting sites
+brew "gh"                               # GitHub CLI
+brew "git-lfs"
+brew "git"
+brew "imagemagick"                      # manipulate images
+brew "jq"                               # JSON processor
+brew "node"
+brew "python"
+brew "rename"                           # file renaming script
+brew "starship"                         # minimal and customizable prompt for zsh
+brew "tldr"                             # simplified man pages
+brew "uv"                               # Python package manager
+brew "wget"
+brew "yt-dlp"                           # download videos from YouTube and other sites
+
+# apps
+cask "appcleaner"                       # uninstall apps
+cask "bitwarden"
+cask "brave-browser"
+cask "cloudflare-warp"                  # vpn client
+cask "cursor"                           # VSCode with AI
+cask "folx"                             # download manager
+cask "font-fira-code-nerd-font"
+cask "font-vazirmatn"
+cask "iina"                             # media player
+cask "keycastr"                         # keystroke visualizer
+cask "localsend"                        # send files to remote computers
+cask "maccy"                            # clipboard manager
+cask "msty"                             # run LLMs locally
+cask "numi"                             # calculator and unit converter
+cask "obs"                              # screen recorder
+cask "obsidian"
+cask "ollama"                           # get up and running with LLMs
+cask "orbstack"
+cask "postman"                          # API development environment
+cask "telegram"
+cask "termius"
+cask "visual-studio-code"

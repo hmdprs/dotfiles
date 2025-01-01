@@ -1,0 +1,70 @@
+{
+  "debug.toolBarLocation": "docked",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'FiraCode Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "interval",
+  "editor.maxTokenizationLineLength": 100000,
+  "editor.minimap.enabled": true,
+  "editor.rulers": [88, 100],
+  "editor.stickyScroll.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/.ipynb_checkpoints": true,
+    "**/.pytest_cache": true,
+    "**/__pycache__": true
+  },
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autoStash": true,
+  "git.autofetch": true,
+  "git.countBadge": "tracked",
+  "git.openRepositoryInParentFolders": "never",
+  "git.untrackedChanges": "separate",
+  "license.author": "Hamed Parsa",
+  "license.default": "MIT",
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "markdown.preview.typographer": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+  "notebook.diff.ignoreMetadata": true,
+  "notebook.diff.ignoreOutputs": true,
+  "notebook.formatOnSave.enabled": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.fontSize": 14,
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
+  "window.confirmBeforeClose": "keyboardOnly",
+  "window.openFoldersInNewWindow": "on",
+  "workbench.activityBar.location": "top",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.settings.editor": "json",
+  // "workbench.settings.useSplitJSON": true,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.tree.indent": 16
+}
